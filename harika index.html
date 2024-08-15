@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="name">FRONTEND DEVELOPER</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact details</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Harika.</span><br>I am a Frontend Developer.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\hp\Downloads\harika.jpg" alt="profile" width="300"height="300">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently a third-year Electronics and Communication student at Godavari Institute of Engineering and Technology, deeply passionate about frontend development in web development. My expertise includes proficiency in HTML, CSS, and JavaScript, with a focus on creating intuitive user interfaces and responsive designs. Accessibility and performance optimization are key aspects of my development approach, ensuring seamless user experiences across various devices and browsers. I continuously enhance my skills through projects and workshops, aiming to integrate cutting-edge design trends and best practices into my work. As I explore frontend development further, I am excited about the potential to innovate and contribute to shaping the digital experiences of tomorrow. Excited to grow my skills in these areas and explore new opportunities in the tech industry.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FRONTEND SKILLS</span><br>HTML, CSS, JavaScript</li>
+                        </ul>
+                        <ul>
+                            <li><span>PROGRAMMING LANGUAGE</span><br>Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>Pursuing BTech at Godavari Institute of Engineering and Technology</li>
+                        </ul>
+                        <ul>
+                            <li><span>2020-2022</span><br>Board of Intermediate at Sri Padmavathi Mahila Junior Kalasala</li>
+                        </ul>
+                        <ul>
+                            <li><span>2019-2020</span><br>Secondary school of education at Pratibha English Medium School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <h2>HTML</h2>
+                    <p>HTML (Hypertext Markup Language) is foundational for website development, defining structure and content. It organizes elements like text, images, and links, crucial for frontend development. Its role is pivotal in creating semantically structured web pages, ensuring accessibility and compatibility across browsers, essential for a cohesive user experience.</p>
+                </div>
+                <div>
+                    <h2>CSS</h2>
+                    <p>CSS (Cascading Style Sheets) styles HTML elements, enhancing frontend design by controlling layout, colors, fonts, and responsiveness. It ensures consistency and aesthetics across web pages, vital for user interface and experience. CSS plays a pivotal role in making websites visually appealing, user-friendly, and adaptable across various devices and screen sizes.</p>
+                </div>
+                <div>
+                    <h2>JavaScript</h2>
+                    <p>JavaScript (JS) enhances frontend functionality by adding interactive elements like animations, forms, and dynamic content. It handles user interactions, validates inputs, and communicates asynchronously with servers. JS plays a crucial role in creating responsive, interactive web experiences, making websites more engaging and capable of real-time updates without reloading pages.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="certificates-list">
+                <div class="certificates">
+                    <img src="C:\Users\hp\Downloads\Harika_udemy.jpg" alt="Udemy Certificate" width="100"height="100">
+                </div>
+                <div class="certificates">
+                    <img src="C:\Users\hp\Downloads\Harika_ibm.jpg" alt="IBM Certificate"width="100"height="100">
+
+                </div>
+                <div class="certificates">
+                <img src="C:\Users\hp\Downloads\Harika_edx.jpg"alt="edx Certificate"width="100"height="100">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>harikakancharla8@gmail.com</p>
+                    <p>8328277556</p>
+                    <a href="C:\Users\hp\Downloads\Resume_K.Harika Sri Lakshmi.pdf" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; Student Portfolio</p>
+    </div>
+
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
